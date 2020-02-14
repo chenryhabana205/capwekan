@@ -1,5 +1,5 @@
 {
-	"schemaVersion" :1 ,
+	"schemaVersion" :2 ,
 	"dockerfileLines" :[
 		"FROM mquandalle/wekan",
 		"EXPOSE 25 3000 27017"
