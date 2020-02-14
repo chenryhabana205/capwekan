@@ -2,6 +2,14 @@
 	"schemaVersion" :2 ,
 	"dockerfileLines" :[
 		"FROM mquandalle/wekan",
-		"EXPOSE 25 3000 27017"
+		"ENV ROOT_URL http://localhost",
+		"ENV PORT 3000",
+		"ENV MONGO_URL mongodb://root:mongodb1234*@srv-captain--mongodb1/wekan?authSource=admin",
+		"ENV MAIL_URL smtp://cloudpos:cloudpos1234*@mail.qva2world.com:25/",
+		"ENV MAIL_FROM Qva2world <cloudpos@qva2world.com>",
+		"ENV WITH_API true",
+		"ENV BROWSER_POLICY_ENABLED true",
+		"ENV TRUSTED_URL ''",
+		"EXPOSE 25 3000"
 	]
 }
